@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kemboo.pneumonia.Main_Activity">
+
+                <TextView
+                    android:id="@+id/infotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/infotext" />
+
+                <TextView
+                    android:id="@+id/X"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Xacceleration"
+                    android:layout_below="@+id/start" />
+
+                <TextView
+                    android:id="@+id/currentX"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_below="@+id/X" />
+
+                <TextView
+                    android:id="@+id/Y"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Yacceleration"
+                    android:layout_below="@+id/currentX" />
+
+                <TextView
+                    android:id="@+id/currentY"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_below="@+id/Y" />
+
+                <TextView
+                    android:id="@+id/Z"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Zacceleration"
+                    android:layout_below="@+id/currentY" />
+
+                <TextView
+                    android:id="@+id/currentZ"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_below="@+id/Z" />
+
+                <Button
+                    android:id="@+id/play"
+                    android:enabled="false"
+                    android:text="@string/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Playbutton"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/start"
+                    android:layout_below="@+id/infotext"
+                    />
+
+                <Button
+                    android:id="@+id/start"
+                    android:text="@string/startrecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Recordbutton"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@+id/infotext"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/timepassed"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/time"
+                    android:layout_below="@+id/currentZ"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/timepassed"
+                    android:layout_below="@+id/currentZ"
+                    android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pneumonia</string>
+    <string name="infotext">Record Audio and Accelerometer Values</string>
+    <string name="startrecording">Start Recording</string>
+    <string name="stoprecording">Stop Recording</string>
+    <string name="newrecording">New Recording</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+
+    <string name="Xacceleration">X acceleration (m/s)</string>
+    <string name="Yacceleration">Y acceleration (m/s)</string>
+    <string name="Zacceleration">Z acceleration (m/s)</string>
+    <string name="zero">0.0</string>
+
+    <string name="timepassed">Time Passed (millisec):</string>
+    <string name="time">0.0</string>
+</resources>
